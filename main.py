@@ -27,3 +27,25 @@ def bogo_sort(lista):
         random.shuffle(lista)
         tries += 1
     return lista, tries
+
+while True:
+    print("\n\n----------SISTEMA DE ORDENAMIENTO DE LISTA----------\n1. Crear una lista\n2. Ver lista actual\n3. Ordenar con bubble sort\n4. Ordenar con quick sort\n5. Ordenar con selection sort\n6. Ordenar con bogo sort\n7. Salir")
+    select = input("Seleccione una opción: ")
+    match select:
+        case "1":
+            pass
+        case "2":
+            pass
+        case "3":
+            pass
+        case "4":
+            pass
+        case "5":
+            pass
+        case "6":
+            pass
+        case "7":
+            print("Saliendo...")
+            break
+        case _:
+            print("Opción inválida")
