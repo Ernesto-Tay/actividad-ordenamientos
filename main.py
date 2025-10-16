@@ -47,7 +47,12 @@ while True:
     select = input("Seleccione una opción: ")
     match select:
         case "1":
-            pass
+            length = int(input("Ingrese la cantidad de elementos: "))
+            if length > 0:
+                refresh_list(main_list, length)
+            else:
+                print("No se puede ingresar numeros negativos.")
+
         case "2":
             print("\nLista actual")
             print(main_list)
@@ -65,3 +70,4 @@ while True:
             break
         case _:
             print("Opción inválida")
+
