@@ -26,15 +26,6 @@ def quick_sort(lista):
 
 def selection_sort(lista):
     for i in range(len(lista)):
-tiempo = bubble_sort(lista)
-print(tiempo)
-
-fin = time.perf_counter()
-
-print(f"Tiempo de ejecución: {fin - inicio:.5f} segundos")
-
-def selection_sort(list):
-    for i in range(len(list)):
         min_index = i
         for j in range(i+1, len(lista)):
             if lista[j] < lista[min_index]:
@@ -72,5 +63,4 @@ while True:
             break
         case _:
             print("Opción inválida")
-        list[i], list[min_index] = list[min_index], list[i]
 
