@@ -49,7 +49,9 @@ while True:
         case "1":
             pass
         case "2":
-            pass
+            print("\nLista actual")
+            print(main_list)
+
         case "3":
             pass
         case "4":
