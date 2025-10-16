@@ -1,6 +1,6 @@
 import random
 import time
-main_list = None
+main_list = []
 
 def bubble_sort(lista):
     for i in range(len(lista)-1):
@@ -8,12 +8,13 @@ def bubble_sort(lista):
             if lista[j] > lista[j+1]:
                 lista[j], lista[j+1] = lista[j+1], lista[j]
 
-def refresh_list(length):
-    new_list = []
+def refresh_list(lista, length):
+    lista.clear()
     for i in range(length):
-        new_list.append(random.randint(1, 999))
-    return new_list
+        lista.append(random.randint(1, 999))
+    return lista
 
+refresh_list(main_list, 5)
 def quick_sort(lista):
     if len(lista) <= 1:
         return lista
