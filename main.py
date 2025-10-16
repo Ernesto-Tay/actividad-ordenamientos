@@ -1,11 +1,12 @@
-def bubble_sort(list):
-    for i in range(len(list)-1):
-        for j in range(len(list)-i-1):
-            if list[j] > list[j+1]:
-                list[j], list[j+1] = list[j+1], list[j]
 import random
 import time
 main_list = None
+
+def bubble_sort(lista):
+    for i in range(len(lista)-1):
+        for j in range(len(lista)-i-1):
+            if lista[j] > lista[j+1]:
+                lista[j], lista[j+1] = lista[j+1], lista[j]
 
 def refresh_list(length):
     new_list = []
@@ -22,14 +23,14 @@ def quick_sort(lista):
     middle = [ val for val in lista if val == pivot ]
     return quick_sort(lower) + middle + quick_sort(higher)
 
-
-def selection_sort(list):
-    for i in range(len(list)):
+def selection_sort(lista):
+    for i in range(len(lista)):
         min_index = i
-        for j in range(i+1, len(list)):
-            if list[j] < list[min_index]:
+        for j in range(i+1, len(lista)):
+            if lista[j] < lista[min_index]:
                 min_index = j
-        list[i], list[min_index] = list[min_index], list[i]
+        lista[i], lista[min_index] = lista[min_index], lista[i]
+
 def is_sorted(lista):
     return all(lista[i] <= lista[i+1] for i in range(len(lista)-1))
 def bogo_sort(lista):
