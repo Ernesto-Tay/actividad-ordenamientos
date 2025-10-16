@@ -18,7 +18,7 @@ refresh_list(main_list, 5)
 def quick_sort(lista):
     if len(lista) <= 1:
         return lista
-    pivot = lista[round(len(lista) / 2, 0)]
+    pivot = lista[int(round(len(lista) / 2, 0))]
     lower = [val for val in lista if val < pivot]
     higher = [ val for val in lista if val > pivot ]
     middle = [ val for val in lista if val == pivot ]
