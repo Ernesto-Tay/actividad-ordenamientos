@@ -60,11 +60,25 @@ while True:
         case "3":
             pass
         case "4":
-            pass
+            if is_sorted(main_list):
+                print("La lista ya está ordenada")
+            else:
+                start = time.perf_counter()
+                main_list = quick_sort(main_list)
+                end = time.perf_counter()
+                print(f"Lista ordenada: {main_list}\nTiempo de ejecución: {end - start:-3f} segundos")
+
         case "5":
             pass
         case "6":
-            pass
+            if is_sorted(main_list):
+                print("La lista ordenada")
+            else:
+                start = time.perf_counter()
+                bogo_sort(main_list)
+                end = time.perf_counter()
+                print(f"Lista ordenada: {main_list}\nTiempo de ejecución: {end - start:-3f} segundos")
+
         case "7":
             print("Saliendo...")
             break
