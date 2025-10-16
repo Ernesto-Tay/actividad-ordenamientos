@@ -27,4 +27,3 @@ def bogo_sort(lista):
         random.shuffle(lista)
         tries += 1
     return lista, tries
-
